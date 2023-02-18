@@ -1,29 +1,25 @@
-import React, {Component} from 'react';
-import {BrowserRouter} from "react-router-dom";
-import {Route, Routes} from "react-router";
+import logo from './logo.svg';
+import './App.css';
 
-
-
-import FacebookLogin from "./Page/FacebookLogin";
-
-import View from './LoginPage/View';
-
-
-class App extends Component {
-  render() {
-      return (
-              <BrowserRouter>
-                  <Routes>
-                      <Route path="/" element={<FacebookLogin />} />
-                      <Route path="/mrhthvgvbnv73829" element={<View />} />
-                      {/* <Route path="/Create" element={<CreatePage />} />
-                      <Route path="/Update/:id" element={<UpdatePage />} /> */}
-                      {/* <Route path="/Update/:id" element={(props)=><UpdatePage {...props} key={Date.now()} />} /> */}
-                      {/* <Route path="/Update/:id" render={(props)=><UpdatePage {...props} key={Date.now()} />} /> */}
-                  </Routes>
-              </BrowserRouter>
-      );
-  }
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React <h2>Rasel Hossain</h2>
+        </a>
+      </header>
+    </div>
+  );
 }
 
 export default App;
